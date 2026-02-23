@@ -10,6 +10,8 @@ ansible/roles/containerd/tasks/photon.yml no-changed-when
 ansible/roles/containerd/defaults/main.yml var-naming[no-role-prefix]
 ansible/roles/ecr_credential_provider/tasks/main.yaml no-changed-when
 ansible/roles/ecr_credential_provider/tasks/main.yaml yaml[line-length]
+ansible/roles/acr_credential_provider/tasks/main.yaml no-changed-when
+ansible/roles/acr_credential_provider/tasks/main.yaml yaml[line-length]
 ansible/roles/firstboot/tasks/main.yaml name[missing]
 ansible/roles/firstboot/tasks/qemu.yml name[missing]
 ansible/roles/gpu/tasks/amd.yml no-changed-when
