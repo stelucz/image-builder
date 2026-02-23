@@ -44,6 +44,9 @@
         name: ecr_credential_provider
       when: ecr_credential_provider | bool
     - ansible.builtin.include_role:
+        name: acr_credential_provider
+      when: acr_credential_provider | bool
+    - ansible.builtin.include_role:
         name: "{{ role }}"
       loop: "{{ custom_role_names.split() + node_custom_roles_post.split() }}"
       loop_control:
